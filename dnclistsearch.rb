@@ -5,11 +5,11 @@
 class Dnclistsearch < Formula
     desc ""
     homepage "https://github.com/keyglee/dnclistsearch"
-    version "0.0.10"
+    version "0.1.0"
   
     on_macos do
-      url "https://github.com/keyglee/dnclistsearch/releases/download/v0.0.10/dnclistsearch_0.0.10_darwin_all.tar.gz"
-      sha256 "c7bff6e12e2913c574177d5277f3353197d1ae206de4693cd9e7c32564010247"
+      url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.0/dnclistsearch_0.1.0_darwin_all.tar.gz"
+      sha256 "4181fed7d6ad8143343397ed03a5a1af21acea32e0d57b6db17bf1bd628e725d"
   
       def install
         bin.install "dnclistsearch"
@@ -18,16 +18,16 @@ class Dnclistsearch < Formula
   
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-        url "https://github.com/keyglee/dnclistsearch/releases/download/v0.0.10/dnclistsearch_0.0.10_linux_amd64.tar.gz"
-        sha256 "d078a77fcbb29fb86f8804d9654ae75fbaa230bf9f336e7ace782dc4d80a9591"
+        url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.0/dnclistsearch_0.1.0_linux_amd64.tar.gz"
+        sha256 "2211cee5ddaa34a7a9abcde658c813b135a15222b1f3733089fcf18bed52c50f"
   
         def install
           bin.install "dnclistsearch"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/keyglee/dnclistsearch/releases/download/v0.0.10/dnclistsearch_0.0.10_linux_arm64.tar.gz"
-        sha256 "35bfdf8bfef7f8d85a0922d03bed69d0edf840645b6d0ba5c7a2dfa2b02e79c4"
+        url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.0/dnclistsearch_0.1.0_linux_arm64.tar.gz"
+        sha256 "4898bf791b80dae2f08991f7de8a60a09fd6e69bd64b8c8c8d94845fa2627d04"
   
         def install
           bin.install "dnclistsearch"
@@ -35,3 +35,7 @@ class Dnclistsearch < Formula
       end
     end
   end
+
+4181fed7d6ad8143343397ed03a5a1af21acea32e0d57b6db17bf1bd628e725d  dnclistsearch_0.1.0_darwin_all.tar.gz
+2211cee5ddaa34a7a9abcde658c813b135a15222b1f3733089fcf18bed52c50f  dnclistsearch_0.1.0_linux_amd64.tar.gz
+4898bf791b80dae2f08991f7de8a60a09fd6e69bd64b8c8c8d94845fa2627d04  dnclistsearch_0.1.0_linux_arm64.tar.gz
