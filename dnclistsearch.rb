@@ -5,11 +5,11 @@
 class Dnclistsearch < Formula
     desc ""
     homepage "https://github.com/keyglee/dnclistsearch"
-    version "0.1.2"
+    version "0.1.3"
   
     on_macos do
-      url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.2/dnclistsearch_0.1.2_darwin_all.tar.gz"
-      sha256 "572c70e9e961949ccd0555ce3ab116915282a055f62ff731f729c8963c1b3e9e"
+      url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.3/dnclistsearch_0.1.3_darwin_all.tar.gz"
+      sha256 "0bbe4db2c1bc94fb2dd04656519bce58a5879ba3fc1c89bf7d65d3c0218de236"
   
       def install
         bin.install "dnclistsearch"
@@ -18,16 +18,16 @@ class Dnclistsearch < Formula
   
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-        url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.2/dnclistsearch_0.1.2_linux_amd64.tar.gz"
-        sha256 "4e0e3788f39b0a24eae689f88a3e053981155a49fac88aff5e795a47aebae491"
+        url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.3/dnclistsearch_0.1.3_linux_amd64.tar.gz"
+        sha256 "af2fdaeeff1c491b46cf5ebd3f5d18e257f7f587fce2fdd9a374d1dd31734566"
   
         def install
           bin.install "dnclistsearch"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.2/dnclistsearch_0.1.2_linux_arm64.tar.gz"
-        sha256 "e17ec4c76f7ae788f0ff7a68ff1eeba55c06b0cbceb3f0253c9fb1e6477206db"
+        url "https://github.com/keyglee/dnclistsearch/releases/download/v0.1.3/dnclistsearch_0.1.3_linux_arm64.tar.gz"
+        sha256 "ca3d7bc39ccf2b8647ce7326de38f59d04f8d954a501a3171e1b734efe4433a9"
   
         def install
           bin.install "dnclistsearch"
